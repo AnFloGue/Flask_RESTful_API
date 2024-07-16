@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
+    <script src="static/jc/bookManager.js"></script>
 </head>
 <body>
     <h1>Welcome to Our Book Library</h1>
     <section>
         <h2>Available Books</h2>
-        <ul>
-            <li>The Great Gatsby - F. Scott Fitzgerald</li>
-            <li>1984 - George Orwell</li>
-            <li>To Kill a Mockingbird - Harper Lee</li>
-            <!-- Add more books here -->
+        <ul id="booksList">
+            <!-- Books will be added here dynamically -->
         </ul>
-    </section>
-    <section>
-        <h2>API Access</h2>
-        <a href="http://127.0.0.1:5000/api/books?page=2&limit=10">Access Books API (Page 2, Limit 10)</a>
-        <p>API URL: http://127.0.0.1:5000/api/books?page=2&limit=10</p>
+        <button id="loadMore">Load Next 10 Books</button>
     </section>
     <footer>
-        <p>&copy; 2023 Book Library</p>
+        <p>&copy; 2024 My Book Library</p>
     </footer>
 </body>
 </html>
